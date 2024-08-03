@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>User</h1>
+            <div class="image">
+                <div class="health-bar-container" id="health-bar-container">
+                    <div class="health-bar" style="width: 80%;"></div>
+                </div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" id="image">
+            </div>
+            <div class="name">
+                <span id="name">Name</span>
+            </div>
+            <div class="type" id="type">
+            </div>
+            <div class="attributes" id="attributes"></div>
+        </div>
+        <div class="middle">
+            <button id="genrate">Genrate</button>
+            <select id="fight">
+                <option value="Attack">Attack</option>
+                <option value="Deffence">Deffence</option>
+                <option value="speed">Speed</option>
+                <option value="hp">Health</option>
+            </select>
+        </div>
+        <div class="card">
+            <h1>Computer</h1>
+            <div class="image">
+                <div class="health-bar-container" id="health-bar-container-cpu">
+                    <div class="health-bar" style="width: 80%;"></div>
+                </div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" id="image-cpu">
+            </div>
+            <div class="name">
+                <span id="name-cpu">Name</span>
+            </div>
+            <div class="type-cpu" id="type-cpu"></div>
+            <div class="attributes" id="attributes-cpu"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
